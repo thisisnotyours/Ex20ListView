@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- entries 는 자동으로 TextView 들이 만들어짐-->
+    <!--<ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/datas"/>   &lt;!&ndash;entries : 자바문서를 쓰지 않고 자동으로 Adapter 를 만들어줌&ndash;&gt;
+                                            &lt;!&ndash; TextView, ScrollView, View(밑줄)..다 자동으로 리스트업해줌 &ndash;&gt;-->
+
+    <!--entires 이용하지 않고 자바문서에 참조변수 만들어지는 것을 시작으로, adopter 를 만들어주기-->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
